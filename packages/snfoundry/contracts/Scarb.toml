@@ -27,5 +27,5 @@ test = "snforge test"
 
 [[tool.snforge.fork]]
 name = "SEPOLIA_LATEST"
-url = "https://starknet-sepolia.public.blastapi.io/rpc/v0_7" # TODO: change to alchemy or infura url to successfully run tests
+url = "$RPC_URL_SEPOLIA_FORK"
 block_id.tag = "latest"
