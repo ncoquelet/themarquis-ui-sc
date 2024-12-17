@@ -68,7 +68,7 @@ fn deploy_ludo_contract() -> ContractAddress {
 }
 
 
-fn deploy_erc20_contract(symbol: ByteArray, address : ContractAddress) -> ContractAddress {
+fn deploy_erc20_contract(symbol: ByteArray, address: ContractAddress) -> ContractAddress {
     let contract_class = declare("ERC20").unwrap().contract_class();
     let mut calldata = array![];
     calldata.append_serde(0);

@@ -25,10 +25,7 @@ mod ERC20 {
 
     #[constructor]
     fn constructor(
-        ref self: ContractState,
-        symbol: ByteArray,
-        initial_supply: u256,
-        recipient: ContractAddress
+        ref self: ContractState, symbol: ByteArray, initial_supply: u256, recipient: ContractAddress
     ) {
         let name = "MyToken";
 
